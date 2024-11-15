@@ -1369,7 +1369,7 @@ canvas:not(#ribbon-canvas),
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
   --pseudo-hover: #ff7242;
   --headline-presudo: #a0a0a0;
-  --scrollbar-color: #ffc0cb;
+  --scrollbar-color: ##ffc0cb;
   --default-bg-color: #ffc0cb;
   --zoom-bg: #fff;
   --mark-bg: rgba(0,0,0,0.3);
@@ -3929,6 +3929,7 @@ figure.highlight pre .javascript .function {
 .container {
   word-wrap: break-word;
   overflow-wrap: break-word;
+  text-align: justify;
 }
 .container a {
   color: #49b1f5;
