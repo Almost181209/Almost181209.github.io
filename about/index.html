@@ -1,0 +1,673 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于我 | Shang Qian's Blog</title><meta name="author" content="尚谦"><meta name="copyright" content="尚谦"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&#x2F;* 头像卡片 *&#x2F;     .author-img {         position: relative; &#x2F;* 设置相对定位 *&#x2F;     }      .author-box {         text-align: center;         padding: 20px;         height: auto;         border-bottom: 2px">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="Shang Qian&#39;s Blog">
+<meta property="og:description" content="&#x2F;* 头像卡片 *&#x2F;     .author-img {         position: relative; &#x2F;* 设置相对定位 *&#x2F;     }      .author-box {         text-align: center;         padding: 20px;         height: auto;         border-bottom: 2px">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/dog.jpg">
+<meta property="article:published_time" content="2024-11-15T14:17:49.000Z">
+<meta property="article:modified_time" content="2024-11-16T13:05:32.295Z">
+<meta property="article:author" content="尚谦">
+<meta property="article:tag" content="博客,Blog,尚谦,尚谦的Blog,每天进步一点">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/dog.jpg"><link rel="shortcut icon" href="/images/dog.jpg"><link rel="canonical" href="http://example.com/about/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关于我',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/css/runtime/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/images/GUET.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/dog.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-martini-glass-citrus"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page type-about" id="body-wrap"><header class="not-home-page fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Shang Qian's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-martini-glass-citrus"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">关于我</h1></div></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="container" id="article-container"><style>
+    /* 头像卡片 */
+    .author-img {
+        position: relative; /* 设置相对定位 */
+    }
+
+    .author-box {
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+        /* 分割线 */
+    }
+
+    .author-img img {
+        border-radius: 50%; /* 显示为圆形 */
+        width: 150px; /* 宽度设置 */
+        height: 150px; /* 高度保持一致，否则就成椭圆了 */
+        margin-bottom: 10px;
+    }
+
+    .green-dot {
+        position: absolute;
+        right: calc(50% - 67px);
+        bottom: 13px;
+        width: 20px; /* 小圆点的宽度 */
+        height: 20px; /* 小圆点的高度 */
+        background-color: rgb(40, 231, 139); /* 小圆点的颜色，感觉很好看，对照着QQ的颜色搞的 */
+        border-radius: 50%; /* 使小圆点变成圆形 */
+    }
+
+    /* 文本格式，全局 */
+    .content h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /* 设置每一节宽度，高度，长度等等 */
+    .content .column {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 65%;
+        margin-left: 20px;
+    }
+
+    /* 给第一格个人信息进行适配 */
+    .content .info-columns {
+        margin: 10px 0;
+    }
+
+    /* 第一格的个人信息，我使用了表格，为了显示更多信息的同时不空出大部分地方，你们自行选择 */
+    .content .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 每一节通用格式 */
+    .section {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: none;
+        margin-top: 20px;
+        margin: 20px 10px 0 10px;
+        border-radius: 10px;
+        background-color: white;
+        height: 250px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 夜间适配，改变背景和相关阴影部分 */
+    [data-theme=dark] .section {
+        background-color: #2c2c2c;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 右图左文样式，左边为row，因为是默认的所以不需要指定 */
+    .section.right {
+        flex-direction: row-reverse;
+    }
+
+    /* 节内图片所在位置相关格式，这里是因为我开了fancybox，也就是点击预览大图的效果，使图片被一个a所包裹，如果你关了请自行将该内容添加到下面的img中，其他位置对应调整 */
+    .section a {
+        width: 45%;
+        height: 100%;
+        transition: transform 0.5s ease; /* 添加过渡效果 */
+
+    }
+
+    /* 节内A标签内的图片，占满a标签，并不拉伸，使用覆盖，自适应大小 */
+    .section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* 在鼠标悬停在 .section 上时，放大图片 */
+    .section:hover a {
+        transform: scale(1.10); /* 将图片放大10% */
+    }
+
+    /* 设置放大只在当图片没有消失时，否则这个宽度会覆盖掉设置的小时候为100%的设定 */
+    @media (min-width: 870px) {
+        /* 图像在右边的节，当鼠标放入，适当向左偏移，造成好像被图像挤过去的视觉效果 */
+        .section.right:hover .content {
+            margin-left: 10px;
+        }
+        /* 通用，因为文字是靠左的，改变宽度就被挤过去了 */
+        .section:hover .content {
+            width: 50%;
+            width: 50%;
+        }
+    }
+
+    /* 通用文字部分基础设置 */
+    .section .content {
+        width: 55%;
+        margin: 20px 20px;
+        max-height: 100%;
+        overflow: hidden; /* 超出部分不好看，我给隐藏了，看不见也比超出强，不过这个可以通过修改各种宽度高度进行个性适配 */
+        text-overflow: ellipsis;
+        transition: width 0.5s ease, margin-left 0.3s ease; /* 添加过渡效果 */
+    }
+
+    /* 最下方的一堆个人站点 */
+    .wrapper {
+        text-align: center; /* 文字居中 */
+        padding: 10px;
+        margin: 20px 10px 0 10px;
+        border-radius: 10px;
+        background-color: white;
+        height: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 四个大字 */
+    .wrapper .label {
+        margin: 20px 20px;
+    }
+
+    /* 网格相关链接布局样式 */
+    .wrapper .site-grid {
+        margin-top: 10px;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 一行四块 */
+        gap: 10px; /* 块之间的间隙 */
+        width: 100%;
+        height: auto; /* 宽度自动填充 */
+    }
+
+    /* 每个站点块的样式 */
+    .wrapper .site-grid .site-item {
+        z-index: 1;
+        border-radius: 10px;
+        position: relative;
+        width: 100%;/* 宽度自动填充 */
+        height: 200px;/* 设置块的高度 */
+        background-size: cover;/* 背景图片填充整个块 */
+        background-position: center;/* 背景图片居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden; /* 使超出边框的内容隐藏 */
+        transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+    }
+
+
+    /* 动画效果，鼠标放上去时背景图片放大的动画 */
+    @media (min-width: 870px) {
+        .wrapper .site-grid .site-item:hover {
+            transform: scale(1.2); /* 放大倍数 */
+            z-index: 2;
+        }
+    }
+
+    /* 块中的字覆盖层样式 */
+    .wrapper .site-overlay {
+        position: absolute;
+        inset: 0; /* 将 top, right, bottom, left 都设为 0 */
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5); /* 初始为透明背景 */
+        transition: background 0.6s, color 0.6s; /* 背景过渡效果 */
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font: bold 25px sans-serif; /* 根据需求更改字体大小 */
+        color: #000000; /* 根据需求更改字体颜色，默认是黑 */
+    }
+
+    /* 鼠标悬停时的样式 */
+    .wrapper .site-item:hover .site-overlay {
+        background: rgba(0, 0, 0, 0.5); /* 白底变黑 */
+        color: #ffffff; /* 黑字变白 */
+    }
+
+    /* 夜间适配 */
+    [data-theme=dark] .wrapper {
+        background-color: #2c2c2c; /* 这是我全局的夜间统一色，你们自己看 */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 夜间鼠标悬停动效适配 */
+    [data-theme=dark] .wrapper .site-item:hover .site-overlay {
+        background: rgba(255, 255, 255, 0.5);
+        color: #000000;
+    }
+
+    /* 夜间卡片背景适配，和白天是相反的 */
+    [data-theme=dark] .wrapper .site-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+    }
+
+    /* 窄屏适配 */
+    @media (max-width: 870px) {/* 当页面宽度小于870像素时 */
+        /* 不显示图片 */
+        .section a {
+            display: none;
+        }
+
+        /* 将位置留给文字 */
+        .section .content {
+            width: 100%;
+        }
+        /* 高度自己调整，因为窄屏视野没有那么大，部分节窄一点宽一点不影响，但是最小仍然是之前设置的值，这个需要你们自己改 */
+        .section {
+            height: auto;
+            min-height: 250px;
+        }
+
+        /* 下方链接到现在显示为两列，要不然挤得不行 */
+        .wrapper .site-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* 一行显示2个块 */
+            grid-auto-rows: 200px;
+            /* 保持行高一致 */
+        }
+    }
+
+    /* 当页面宽度小于480像素时，我们的表格成为1列 */
+    @media (max-width: 560px) {
+        .wrapper .site-grid {
+            grid-template-columns: repeat(1, 1fr);
+            /* 一行显示1个块 */
+            grid-auto-rows: 200px;
+            /* 保持行高一致 */
+        }
+    }
+</style>
+
+<div class="author-box">
+    <div class="author-img">
+        <img class="no-lightbox" src="https://img.picui.cn/free/2024/11/15/6736b9ff6b5ed.jpg">
+        <div class="green-dot"></div>
+    </div>
+    <div class="image-dot"></div>
+    <p class="p center logo large"></p>
+    <p class="p center small">也曾怀念当初那个无所不能的自己.</p>
+</div>
+
+<div class="section left">
+    <img src="/images/aboutme.jpg">
+    <!-- https://img.picui.cn/free/2024/11/16/67388f88c4340.jpg -->
+    <div class="content">
+        <div class="info-columns">
+            <h2>个人信息</h2>
+            <ul>
+                <div class="row">
+                    <div class="column">
+                        <li>爱好: 唱歌、游戏、羽毛球、摄影、烹饪</li>
+                        <li>住址: 以太阳为中心由内向外的第三颗行星</li>
+                        <li>目标: 变得不拧巴</li>
+                    </div>
+                    <div class="column">
+                        <li>邮箱: 357425252@qq.com</li>
+                        <li>年级: 二〇二二级</li>
+                        <li>专业: 大数据管理与应用</li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="section right">
+    <img src="https://img.picui.cn/free/2024/11/16/6738965333b1f.jpg">
+    <div class="content">
+        <h2>教育背景</h2>
+        <ul>
+            <li>学校: 桂林电子科技大学</li>
+            <li>主要专业课程: 不是在制造bug就是在修改bug的路上🧑‍💻</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="section left">
+    <img src="https://cdn.qyliu.top/i/2024/04/14/661ab0c2a778f.png">
+    <div class="content">
+        <h2>技能</h2>
+        <ul>
+            <li>语言技能: 英语、日语</li>
+            <li>专业技能: Python编程、Python数据分析、Python爬虫、Linux、HTML、MySQL、Hadoop、Java、R语言、Scala</li>
+            <li>通用技能: Office、Excel、PowerPoint</li>
+            <li>正在学习中</li>
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="section right">
+    <img src="https://cdn.qyliu.top/i/2024/04/14/661ab0ee65c56.png">
+    <div class="content">
+        <h2>荣誉和奖项</h2>
+        <ul>
+            <li>全国大学生数学竞赛“省级三等奖”（2023.12）</li>
+            <li>钢铁缺陷检测百度挑战赛“第三名”（2023.10）</li>
+            <li>天梯赛校内选拔赛，“校级三等奖”（2020.8）</li>
+            <li>武汉理工大学“三好学生”（2021.12）</li>
+            <li>待完善</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section left">
+    <img src="https://cdn.qyliu.top/i/2024/04/14/661ab078b3033.png">
+    <div class="content">
+        <h2>学生干部经历</h2>
+        <ul>
+            <li>武汉理工大学计算机协会事务部部长</li>
+            <li>人工智能2102班班长</li>
+            <li>易班学生工作站创意策划部通讯员、社会实践委员</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section right">
+    <img src="https://cdn.qyliu.top/i/2024/04/14/661ab09243659.png">
+    <div class="content">
+        <h2>主要项目</h2>
+        <ul>
+            <li>多尺度人头视觉特征的人数统计模型</li>
+            <li>基于PyTorch实现LSTM汉语分词模型及情感分析</li>
+            <li>钢铁缺陷检测深度研究</li>
+            <li>基于Java实现MySQL数据库双端图书管理系统</li>
+            <li>基于MFC的连连看程序</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section left">
+    <img src="https://cdn.qyliu.top/i/2024/04/14/661ab10f685ed.png">
+    <div class="content">
+        <h2>自我评价</h2>
+        <ul>
+            <li>思想上乐观开朗，乐于助人，具有团队协作精神及创新意识。</li>
+            <li>工作上极富责任心与信念感，对待工作认真负责，有较强的组织管理及动手能力。</li>
+            <li>总结：人嘎嘎好！</li>
+        </ul>
+    </div>
+</div> -->
+<!-- <div class="wrapper">
+    <div class="label"><h2>本人站点</h2></div>
+    <div class="site-grid">
+        <a href="http://www.qyliu.top" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab1495ff39.png')">
+            <div class="site-overlay">
+                <span>导航站点<br>（本站主站）</span>
+            </div>
+        </a>
+        <a href="https://m.liushen.fun/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab179e85c2.png')">
+            <div class="site-overlay">
+                <span>盐焗小星球<br>（闲言碎语）</span>
+            </div>
+        </a>
+        <a href="https://listen.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab19811d2c.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬监控墙<br>（网站状态）</span>
+            </div>
+        </a>
+        <a href="https://um.liushen.fun/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab31673f3c.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬访客统计<br>（统计人数）</span>
+            </div>
+        </a>
+        <a href="https://mindmap.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab1e09dea0.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬思维导图<br>（好用小工具）</span>
+            </div>
+        </a>
+        <a href="https://cdn.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab1f51c57d.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬图床<br>（自建的安稳）</span>
+            </div>
+        </a>
+        <a href="https://ittools.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab3a11aa80.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬IT工具箱<br>（好用小工具）</span>
+            </div>
+        </a>
+        <a href="https://drew.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab22b067f1.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬画板<br>（好用小工具）</span>
+            </div>
+        </a>
+        <a href="https://chat.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab26310be8.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬NextGPT<br>（AI对话工具）</span>
+            </div>
+        </a>
+        <a href="https://calcium.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab27ab2abc.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬在线计算器<br>（在线计算器）</span>
+            </div>
+        </a>
+        <a href="https://bingai.qyliu.top/" target="_blank" class="site-item"
+            style="background-image: url('https://cdn.qyliu.top/i/2024/04/14/661ab37220873.png')">
+            <div class="site-overlay">
+                <span>清羽飞扬的BingAI<br>（其实没啥用）</span>
+            </div>
+        </a>
+    </div>
+</div> -->
+</div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 By 尚谦</div><div class="footer_custom_text">Welcome to Shang Qian's blog</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题使用Butterfly" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/shizhong.js"></script><script async src="/js/ali_font.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":200,"height":350},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
