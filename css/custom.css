@@ -368,3 +368,9 @@ div#category {
 #article-container figure.highlight {
   border-radius: 10px;
 }
+
+/* 加载页面 */
+.loading-img {
+  background: url(https://img.picui.cn/free/2024/11/17/67395c4f15aad.jpg) no-repeat center center;
+  background-size: cover;
+}
